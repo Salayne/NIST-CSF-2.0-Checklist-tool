@@ -1,0 +1,183 @@
+{
+  "CSF 2.0": {
+    "Functions": [
+      {
+        "id": "ID",
+        "name": "Identify",
+        "description": "Develop a foundational understanding to manage cybersecurity risk to systems, people, assets, data, and capabilities.",
+        "Categories": [
+          {
+            "id": "ID.AM",
+            "name": "Asset Management",
+            "description": "Identify and manage assets that constitute the system and data flows."
+          },
+          {
+            "id": "ID.BE",
+            "name": "Business Environment",
+            "description": "Understand the organization's mission, objectives, stakeholders, and activities to inform cybersecurity risk management."
+          },
+          {
+            "id": "ID.GV",
+            "name": "Governance",
+            "description": "Establish and implement the policies, processes, and procedures to manage and monitor the organization's regulatory, legal, risk, environmental, and operational requirements."
+          },
+          {
+            "id": "ID.RA",
+            "name": "Risk Assessment",
+            "description": "Understand the cybersecurity risks to organizational operations (including mission, functions, image, and reputation), organizational assets, and individuals."
+          },
+          {
+            "id": "ID.RM",
+            "name": "Risk Management Strategy",
+            "description": "Establish and articulate the organization’s risk tolerances and appetite relative to the organization's mission and business objectives."
+          },
+          {
+            "id": "ID.SC",
+            "name": "Supply Chain Risk Management",
+            "description": "Identify, establish, assess, and manage cybersecurity risks associated with supply chain."
+          }
+        ]
+      },
+      {
+        "id": "PR",
+        "name": "Protect",
+        "description": "Use safeguards to manage cybersecurity risk to systems, people, assets, data, and capabilities.",
+        "Categories": [
+          {
+            "id": "PR.AC",
+            "name": "Access Control",
+            "description": "Restrict access to assets and facilities to authorized users, processes, or devices and to authorized activities and transactions."
+          },
+          {
+            "id": "PR.AT",
+            "name": "Awareness and Training",
+            "description": "Train and educate the workforce on cybersecurity responsibilities, risks, and organizational policies to perform their duties securely."
+          },
+          {
+            "id": "PR.DS",
+            "name": "Data Security",
+            "description": "Manage information and records to protect the confidentiality, integrity, and availability of information."
+          },
+          {
+            "id": "PR.IP",
+            "name": "Information Protection Processes and Procedures",
+            "description": "Implement and maintain information security policies, processes, and procedures."
+          },
+          {
+            "id": "PR.MA",
+            "name": "Maintenance",
+            "description": "Perform maintenance and repairs of organizational systems components consistent with policies and procedures."
+          },
+          {
+            "id": "PR.PT",
+            "name": "Protective Technology",
+            "description": "Implement security solutions to ensure the security and resilience of systems and assets."
+          }
+        ]
+      },
+      {
+        "id": "DE",
+        "name": "Detect",
+        "description": "Discover and identify cybersecurity threats and anomalous events.",
+        "Categories": [
+          {
+            "id": "DE.AE",
+            "name": "Anomalies and Events",
+            "description": "Monitor for anomalous activity, understand potential impacts, and identify security events."
+          },
+          {
+            "id": "DE.CM",
+            "name": "Security Continuous Monitoring",
+            "description": "Monitor the information system and its components for cybersecurity events and verify the effectiveness of protective measures."
+          },
+          {
+            "id": "DE.DP",
+            "name": "Detection Processes",
+            "description": "Maintain and test detection processes and procedures to ensure timely and effective detection of cybersecurity events."
+          }
+        ]
+      },
+      {
+        "id": "RS",
+        "name": "Respond",
+        "description": "Take action regarding a detected cybersecurity incident.",
+        "Categories": [
+          {
+            "id": "RS.RP",
+            "name": "Response Planning",
+            "description": "Execute the cybersecurity incident response plan."
+          },
+          {
+            "id": "RS.CO",
+            "name": "Communications",
+            "description": "Coordinate response activities with internal and external stakeholders."
+          },
+          {
+            "id": "RS.AN",
+            "name": "Analysis",
+            "description": "Perform analysis to ensure adequate response to and recovery from cybersecurity incidents."
+          },
+          {
+            "id": "RS.MI",
+            "name": "Mitigation",
+            "description": "Take action to contain the impact of a cybersecurity incident."
+          },
+          {
+            "id": "RS.IM",
+            "name": "Improvements",
+            "description": "Incorporate lessons learned from current and past cybersecurity incidents into future activities."
+          }
+        ]
+      },
+      {
+        "id": "RC",
+        "name": "Recover",
+        "description": "Restore systems and assets affected by a cybersecurity incident.",
+        "Categories": [
+          {
+            "id": "RC.RP",
+            "name": "Recovery Planning",
+            "description": "Execute the cybersecurity recovery plan."
+          },
+          {
+            "id": "RC.IM",
+            "name": "Improvements",
+            "description": "Incorporate lessons learned from current and past cybersecurity incidents into future activities."
+          },
+          {
+            "id": "RC.CO",
+            "name": "Communications",
+            "description": "Coordinate recovery activities with internal and external stakeholders."
+          }
+        ]
+      },
+      {
+        "id": "GV",
+        "name": "Govern",
+        "description": "Establish and monitor the organization's cybersecurity risk management strategy, expectations, and policy.",
+        "Categories": [
+          {
+            "id": "GV.PO",
+            "name": "Organizational Context",
+            "description": "Understand the organization's mission, objectives, stakeholders, and activities to inform cybersecurity risk management."
+          },
+          {
+            "id": "GV.RM",
+            "name": "Risk Management",
+            "description": "Establish and articulate the organization's risk tolerances and appetite relative to the organization's mission and business objectives."
+          },
+          {
+            "id": "GV.IR",
+            "name": "Oversight",
+            "description": "Monitor and evaluate the organization’s cybersecurity program to ensure it aligns with risk management strategy and business objectives."
+          },
+          {
+            "id": "GV.PR",
+            "name": "Legal and Regulatory Requirements",
+            "description": "Identify and comply with applicable laws, regulations, and policies related to cybersecurity."
+          }
+        ]
+      }
+    ]
+  }
+}
