@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'; 
-import rawCsfData from './data/csf-data.json';
+import rawCsfData from './data/csf-data.json'; // Import the CSF data from JSON file
+
 
 // Component for a single Category item
 const CategoryItem = ({ category, updateCompliance }) => {
   const { id, name, description, status, notes } = category;
 
+
   const handleStatusChange = (e) => {
     updateCompliance(id, 'status', e.target.value);
   };
+
 
   const handleNotesChange = (e) => {
     updateCompliance(id, 'notes', e.target.value);
   };
 
+
   return (
     <div className="category-item">
       <h4 className="category-item-title">{id}: {name}</h4>
       <p className="category-item-description">{description}</p>
+
 
       <div className="status-radios">
         <label className="radio-label">
@@ -55,6 +60,7 @@ const CategoryItem = ({ category, updateCompliance }) => {
         </label>
       </div>
 
+
       <div>
         <label htmlFor={`notes-${id}`} className="notes-label">Notes/Evidence:</label>
         <textarea
@@ -70,12 +76,14 @@ const CategoryItem = ({ category, updateCompliance }) => {
   );
 };
 
+
 // Main App component
 function App() {
   const [csfData, setCsfData] = useState(null);
   const [complianceData, setComplianceData] = useState([]);
   const [showReport, setShowReport] = useState(false);
   const [loading, setLoading] = useState(true);
+
 
   // Simulate fetching compliance data when the component mounts
   useEffect(() => {
@@ -91,8 +99,10 @@ function App() {
       }
     };
 
+
     fetchData();
   }, []);
+
 
   // Initialize compliance data once csfData is loaded
   useEffect(() => {
@@ -109,6 +119,7 @@ function App() {
     }
   }, [csfData]);
 
+
   // Function to update the compliance status or notes for a specific category
   const updateCompliance = (categoryId, field, value) => {
     setComplianceData(prevData =>
@@ -121,10 +132,12 @@ function App() {
     );
   };
 
+
   // Function to toggle the report visibility
   const toggleReport = () => {
     setShowReport(!showReport);
   };
+
 
   // Calculate summary for the report
   const calculateSummary = () => {
@@ -132,6 +145,7 @@ function App() {
     let notMet = 0;
     let notApplicable = 0;
     let pending = 0;
+
 
     complianceData.forEach(func => {
       func.Categories.forEach(cat => {
@@ -147,12 +161,16 @@ function App() {
       });
     });
 
+
     return { met, notMet, notApplicable, pending };
   };
 
+
   const summary = calculateSummary();
 
+
   const allFunctions = csfData ? csfData["CSF 2.0"].Functions : [];
+
 
   if (loading) {
     return (
@@ -162,12 +180,14 @@ function App() {
     );
   }
 
+
   return (
     <div className="app-container">
       <header className="app-header">
         <h1>NIST CSF 2.0 Compliance Checklist</h1>
         <p>Assess your organization's adherence to cybersecurity best practices.</p>
       </header>
+
 
       <main className="main-content">
         {allFunctions.length > 0 ? (
@@ -192,6 +212,7 @@ function App() {
           <div className="text-center text-gray-600 text-xl py-10">No functions found or loaded.</div>
         )}
 
+
         <div className="report-button-container">
           <button
             onClick={toggleReport}
@@ -200,6 +221,7 @@ function App() {
             {showReport ? 'Hide Report' : 'Generate Compliance Report'}
           </button>
         </div>
+
 
         {showReport && (
           <section className="report-section">
@@ -222,6 +244,7 @@ function App() {
                 <p className="value yellow">{summary.pending}</p>
               </div>
             </div>
+
 
             <h3>Detailed Breakdown:</h3>
             {complianceData.map(func => (
@@ -252,11 +275,13 @@ function App() {
         )}
       </main>
 
+
       <footer className="app-footer">
         <p>&copy; {new Date().getFullYear()} NIST CSF 2.0 Compliance Tool. All rights reserved.</p>
       </footer>
     </div>
   );
 }
+
 
 export default App;

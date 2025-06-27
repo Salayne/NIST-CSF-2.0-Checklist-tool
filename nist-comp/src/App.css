@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 /* General Body and Container */
 .app-container {
     min-height: 100vh;
@@ -23,6 +24,7 @@
         padding: 2rem;
     }
 }
+
 
 /* Header */
 .app-header {
@@ -44,12 +46,14 @@
     color: #4a5568; /* text-gray-600 */
 }
 
+
 /* Main Content Area */
 .main-content {
     max-width: 64rem; /* max-w-4xl */
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* Loading State */
 .loading-container {
@@ -66,6 +70,7 @@
     font-weight: 600; /* font-semibold */
     color: #4338ca; /* text-indigo-700 */
 }
+
 
 /* Function Section */
 .function-section {
@@ -88,6 +93,7 @@
     color: #4a5568; /* text-gray-700 */
     margin-bottom: 1.5rem; /* mb-6 */
 }
+
 
 /* Category Item */
 .category-item {
@@ -179,6 +185,7 @@
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); /* focus:ring-indigo-500 */
 }
 
+
 /* Report Button */
 .report-button-container {
     text-align: center;
@@ -203,6 +210,7 @@
 .report-button:focus {
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.5), 0 0 0 4px rgba(99, 102, 241, 0.5); /* focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 */
 }
+
 
 /* Report Section */
 .report-section {
@@ -240,6 +248,7 @@
     }
 }
 
+
 .summary-card {
     padding: 1rem; /* p-4 */
     border-radius: 0.5rem; /* rounded-lg */
@@ -271,6 +280,7 @@
 .summary-card p.label.blue { color: #1e40af; }
 .summary-card p.label.yellow { color: #d97706; }
 
+
 .summary-card p.value {
     font-size: 1.875rem; /* text-3xl */
     font-weight: 700; /* font-bold */
@@ -279,6 +289,7 @@
 .summary-card p.value.red { color: #991b1b; }
 .summary-card p.value.blue { color: #1d4ed8; }
 .summary-card p.value.yellow { color: #b45309; }
+
 
 .report-section h3 {
     font-size: 1.25rem; /* text-xl */
@@ -324,6 +335,7 @@
     margin-top: 0.25rem; /* mt-1 */
     margin-left: 1rem; /* ml-4 */
 }
+
 
 /* Footer */
 .app-footer {
